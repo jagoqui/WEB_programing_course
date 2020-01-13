@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Base de datos de productos</title>
+		<link rel="icon"  type = "image/png" href= "images/icon.png">
+	</head>
+	<body bgcolor="#ede7f6">
+		<form action="." oninput="range_control_value.value = quantity.valueAsNumber">
+			<div id="formulario" align="center">
+				<table id="formulario" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td id="tabla" valign="top">
+							<fieldset>
+								<legend><h1><big>PRODUCT BASE DATA</big></h1></legend>
+								<label id="radio_button_Add">
+									<font color="red">Select <b>ADD</b>, for add new product, or select <b>SEARCH</b>, for search a product in the base data.</font><br>
+									<input name="select_form" type="radio" onclick="document.getElementById('Add_new_product').style.visibility = 'visible';document.getElementById('Search_product').style.visibility = 'hidden'">ADD
+								</label>
+								<label id="radio_button_Search" >
+									<input type="radio" name="select_form" onclick="document.getElementById('Add_new_product').style.visibility='hidden';document.getElementById('Search_product').style.visibility = 'visible'">SEARCH
+								</label>
+								<label id="radio_button_exit">
+									<input type="radio" name="select_form" onchange ="document.getElementById('login').style.visibility='visible';document.getElementById('Add_new_product').style.visibility = 'hidden';document.getElementById('Search_product').style.visibility = 'hidden';document.getElementById('radio_button_Add').style.visibility = 'hidden';document.getElementById('radio_button_Search').style.visibility = 'hidden';document.getElementById('radio_button_exit').style.visibility = 'hidden'"><font color="RED"><big>EXIT</big></font>
+								</label>
+								<table cellspacing="0" cellpadding="0">
+									<tr>
+										<td>
+											<fieldset id="login" style="position: absolute;">
+												<legend><h2><big>Login</big></h2></legend>
+												<input type="name" name="user" placeholder="Enter login user" title="Invalid user" required pattern="fifi6481" autofocus onfocus="document.getElementById('Add_new_product').style.visibility = 'hidden';document.getElementById('Search_product').style.visibility = 'hidden';document.getElementById('radio_button_Add').style.visibility = 'hidden';document.getElementById('radio_button_Search').style.visibility = 'hidden';document.getElementById('radio_button_exit').style.visibility = 'hidden'"><br>
+												<label>
+												<input type="password" name="password" placeholder="Enter login password" 
+												required pattern="fifi6481" title="Invalid password">
+												<button type="submit" onclick="if (form.user.value=='fifi6481' && form.password.value=='fifi6481'){document.getElementById('radio_button_Add').style.visibility = 'visible';document.getElementById('radio_button_Search').style.visibility = 'visible';document.getElementById('radio_button_exit').style.visibility = 'visible';document.getElementById('login').style.visibility='hidden';form.user.value=null ;form.password.value=null}else{alert('Error Password or Username')}">Login</button></label>
+											</fieldset>
+											<fieldset id="Add_new_product" style="position:absolute;">
+												<legend><h2><big>Add new product</big></h2></legend>
+												<label for="quantity">Quantity:</label><br>
+												<datalist id="tickmarks">
+													<option value="10">
+													<option value="20">
+													<option value="30">
+													<option value="40">
+													<option value="50">
+													<option value="60">
+													<option value="70">
+													<option value="80">
+													<option value="90">
+													<option value="100">
+												</datalist>
+												<input type="range" name="quantity" min="10" max="100" value="0" step="10" list="tickmarks" required/> 
+												<output for="quantity" name="range_control_value">10</output><br/>
+												<input type="text" name="name" placeholder="Packing code" size="12" required autocomplete="false"/><br>
+												<select name="Category" required>
+													<option value="">Select category</option>
+													<optgroup label="Electronics components">
+														<option value="1">SMD</option>
+														<option value="2">Trough-Hole</option>
+													</optgroup>
+													<option value="3">Tools</option>
+													<option value="4">Consumables</option>
+													<option value="5">Others</option>
+												</select><br>
+												<button onclick="document.getElementById('select_img').click()">Choose image</button>
+												<input id="select_img" type="file" name="image" accept="image/*" required  onchange="document.getElementById('image_view').src = window.URL.createObjectURL(this.files[0])" title="select images only" hidden/><br>
+												<label for="select_img"><img  id="image_view" src="images/select_image.png" width="100px" height="100px"></label><br>
+												<label for="color">Select color</label>
+												<input id="color" type="color" name="color" required><br>
+												<label>
+													Certificates: 
+													<label><input type="checkbox" name="">RoHS</label>
+													<label><input type="checkbox" name="">CE</label>
+													<label><input type="checkbox" name="">FCC</label>
+												</label><br>
+												<input type="url" name="datasheet" placeholder="Enter datasheet link"/><br/>
+												<label id="Packing date">
+													Packing date
+													<input type="date" name="date_control"/>
+												</label><br/>
+												<label id="Packing time">
+													Packing time
+													<input type="time" name="time_control"/>
+												</label><br/>
+												<label for="reset" title="
+												reset"><img src="images/reset.png" width="50px" height="50px"></label>
+												<input id="reset" type="reset" hidden>		
+												<input id="send" type="image" name="send" src="images/save.png" width="50px" height="50px" title="save"><br>
+											</fieldset>
+											<fieldset id="Search_product" style="position:absolute;">
+												<legend><h2><big>Search product</big></h2></legend>
+												<div>
+												    <input id="mySearch" type="search" name="q"
+												    placeholder="User IDs are 4–8 characters in length" required
+												    size="30" minlength="4" maxlength="8">
+												    <button>Search</button>
+											  	</div>
+											</fieldset>
+										</td>
+									</tr>
+								</table>
+							</fieldset>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</form>
+	</body>
+</html>

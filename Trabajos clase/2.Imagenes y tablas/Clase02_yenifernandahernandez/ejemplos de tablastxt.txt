@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	
+	<title> ejemplo pagina wikipedia</title> 
+ 
+        <meta charset="UTF-8">
+       
+         
+</head>
+
+<body>
+
+
+    
+   <center>
+  <h1>  <b> <i> Ejercicios de tablas  </h1>  </b> </i>
+     <p>   <i> yenny hernandez  </p>   </i>    <br> <br> <br>
+
+   <table  border="5" bordercolor ="red"  > 
+   
+   <caption>"TABLA SIMPLE"</caption>
+    	<tr> 
+        	<td>Col A </td>
+		<td> Col B</td>
+		<td> Col C</td>
+		<td> Col D </td>
+        </tr>
+        <tr> 
+		<td>fil 1 </td>
+		<td> cel b1 </td>
+		<td> cel c1</td>
+		<td>cel d1 </td>
+
+	</tr>
+	<tr> 
+		<td>fil 2 </td>
+		<td> cel b2</td>
+		<td>  cel c2</td>
+		<td> cel d2</td>
+	</tr>
+	<tr> 
+		<td> fil 3 </td>
+		<td> cel b3</td>
+		<td> cel c3</td>
+		<td>cel d3 </td>
+	</tr>
+
+   </table>
+   
+
+   <table  border="5" bordercolor ="pink"  >  <BR ><BR ><BR >
+   
+   <caption>"SEGUNDA TABLA "</caption>
+    	 <tr  > 
+		 <td rowspan="2" colspan="2"></td>
+		 <td rowspan="2" colspan="2"> columna 1 </td>
+		 <td  rowspan="1" colspan="2" > columna 2 </td>
+                      
+	 </tr>
+	 <tr>		 
+		
+		 <td  rowspan="1" colspan="1" > columna 2a </td>
+		 <td  rowspan="1" colspan="1" > columna 2b </td>
+	</tr>
+
+	<tr>
+		<td  rowspan="2" colspan="1" > fila 1 </td>
+		<td  rowspan="1" colspan="1" > fila la </td>
+		<td  rowspan="1" colspan="2" > 123 </td>
+		<td  rowspan="1" colspan="1" > 456 </td>
+		<td  rowspan="1" colspan="1" > 789 </td>
+
+	</tr>	
+
+        <tr>
+		<td  rowspan="1" colspan="1" > fila la </td>
+		<td  rowspan="1" colspan="2" > 123 </td>
+		<td  rowspan="1" colspan="1" > 456 </td>
+		<td  rowspan="1" colspan="1" > 789 </td>
+
+ 	</tr>
+	<tr>
+		<td  rowspan="1" colspan="2" > fila 2 </td>
+		<td  rowspan="1" colspan="2" > 123 </td>
+		<td  rowspan="1" colspan="1" > 456 </td>
+		<td  rowspan="1" colspan="1" > 789 </td>
+        </tr>
+
+
+
+     </table>
+     <table border="5" bordercolor ="green" > <BR ><BR ><BR >
+
+	<caption>"GASTO DOMESTICO PRIMER SEMESTRE "</caption>
+    	 <tr  > 
+		 <td rowspan="2" colspan="1"> Mes</td>
+		 <td rowspan="1" colspan="4"> concepto</td>
+		 <td  rowspan="2" colspan="1" > total</td>
+                      
+	 </tr>
+	 <tr>		 
+		
+		 <td  rowspan="1" colspan="1" > corriente</td>
+		 <td  rowspan="1" colspan="1" > factura </td>
+ 		<td  rowspan="1" colspan="1" > coche </td>
+		<td  rowspan="1" colspan="1" > casa </td>
+	</tr>
+
+	<tr>
+		<td  rowspan="1" colspan="1" > enero </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+		<td  rowspan="1" colspan="1" >... </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+
+	</tr>	
+	<tr>
+		<td  rowspan="1" colspan="1" > febrero </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+		<td  rowspan="1" colspan="1" >... </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+
+	</tr>
+	<tr>
+		<td  rowspan="1" colspan="1" > marzo </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+		<td  rowspan="1" colspan="1" >... </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+
+	</tr>
+	<tr>
+		<td  rowspan="1" colspan="1" > abril </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+		<td  rowspan="1" colspan="1" >... </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+
+	</tr>
+	<tr>
+		<td  rowspan="1" colspan="1" > mayo </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+		<td  rowspan="1" colspan="1" >... </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+
+	</tr>
+	<tr>
+		<td  rowspan="1" colspan="1" > junio </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+		<td  rowspan="1" colspan="1" >... </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+
+	</tr>
+	<tr>
+		<td  rowspan="2" colspan="1" > totales</td>
+		<td  rowspan="1" colspan="1" > ... </td>
+		<td  rowspan="1" colspan="1" >... </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+		<td  rowspan="1" colspan="1" > ... </td>
+
+	</tr>
+	<tr>
+		
+		<td  rowspan="1" colspan="1" > corriente </td>
+		<td  rowspan="1" colspan="1" >factura </td>
+		<td  rowspan="1" colspan="1" > coche </td>
+		<td  rowspan="1" colspan="1" > casa</td>
+		<td  rowspan="1" colspan="1" > total </td>
+
+	</tr>
+
+       </table>
+
+	<center>
+
+  	 <table  border="5" bordercolor ="blue"  >  <br><br>
+   
+   	<caption>"resultado de la busqueda"</caption>
+    	<tr> 
+
+			<td  rowspan="1" colspan="1" > imagen </td>
+                        <td  rowspan="1" colspan="1" > datos </td>
+
+
+	 </tr>
+	<tr> 
+
+			<td  rowspan="1" colspan="1" > <img src="videocamara.png" alt="Imagen del ordenador portátil" /> </td>
+                        <td  rowspan="1" colspan="1" > <p><a href="https://www.google.com/search?q=google&rlz=1C1SQJL_esCO837CO846&source=lnms&tbm=isch&sa=X&ved=2ahUKEwifwf_pw5XmAhXL1VkKHYJsAIYQ_AUoAXoECBAQAw&biw=1242&bih=553"> Portátil - 3 GHz - 4 GB RAM <br>Comprar:</a> <del>2.990 &euro;</del> <strong>2.599 &euro;</strong></p> </td>
+
+
+	 </tr>
+
+	<tr> 
+
+			<td  rowspan="1" colspan="1" > <img src="portatil.png" alt="Imagen del ordenador portátil" /> </td>
+                        <td  rowspan="1" colspan="1" > <p><a href="https://www.google.com/search?q=google&rlz=1C1SQJL_esCO837CO846&source=lnms&tbm=isch&sa=X&ved=2ahUKEwifwf_pw5XmAhXL1VkKHYJsAIYQ_AUoAXoECBAQAw&biw=1242&bih=553"> Videocámara - Alta definición 1080p - 60 GB<br> Comprar:</a> <del>1.099 &euro;</del> <strong>999 &euro;</strong></p> </td>
+
+
+	 </tr>
+
+	<tr> 
+
+			<td  rowspan="1" colspan="1" > <img src="tv.png" alt="Imagen del ordenador portátil" /> </td>
+                        <td  rowspan="1" colspan="1" > <p><a href="https://www.google.com/search?q=google&rlz=1C1SQJL_esCO837CO846&source=lnms&tbm=isch&sa=X&ved=2ahUKEwifwf_pw5XmAhXL1VkKHYJsAIYQ_AUoAXoECBAQAw&biw=1242&bih=553"> Televisor - 46" - Full HD<br> Comprar:</a> <del>1.099 &euro;</del> <strong>1.799 &euro;</strong></p> </td>
+ </td>
+
+
+	 </tr>
+	<tr> 
+
+			<td  rowspan="1" colspan="1" > <img src="movil.png" alt="Imagen del ordenador portátil" /> </td>
+                        <td  rowspan="1" colspan="1" > <p><a href="https://www.google.com/search?q=google&rlz=1C1SQJL_esCO837CO846&source=lnms&tbm=isch&sa=X&ved=2ahUKEwifwf_pw5XmAhXL1VkKHYJsAIYQ_AUoAXoECBAQAw&biw=1242&bih=553"> Móvil - 3G - Wi-Fi - 8 GB<br> Comprar:</a> <del>339 &euro;</del> <strong>349 &euro;</strong></p> </td>
+</td>
+
+
+	 </tr>
+
+
+     </table>
+     </center>
+</body>	
+</html>
+
